@@ -88,13 +88,13 @@ export function SimpleSidebar({ isCollapsed, onToggle }: SimpleSidebarProps) {
                                         {!isCollapsed && <span className="ml-2">Cadastros</span>}
                                     </Button>
                                     <Button
-                                        variant="ghost"
+                                        variant={pathname === '/youtube' ? 'secondary' : 'ghost'}
                                         className={`w-full justify-start cursor-pointer ${isCollapsed ? 'px-2' : 'px-3'}`}
                                         size="sm"
-                                        onClick={() => router.push('/users')}
+                                        onClick={() => router.push('/youtube')}
                                     >
-                                        <Users className="h-4 w-4" />
-                                        {!isCollapsed && <span className="ml-2">Usuários</span>}
+                                        <Clapperboard className="h-4 w-4" />
+                                        {!isCollapsed && <span className="ml-2">YouTube</span>}
                                     </Button>
                                     <Button
                                         variant="ghost"

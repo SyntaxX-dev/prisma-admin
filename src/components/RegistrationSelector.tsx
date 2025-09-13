@@ -6,8 +6,8 @@ import { Button } from '@/components/ui/button'
 import { ArrowLeft, BookOpen, Clapperboard, MonitorPlay, Plus } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { CourseCreationForm } from './CourseCreationForm'
-import { SubCourseCreationForm } from './SubCourseCreationForm'
 import { VideoCreationForm } from './VideoCreationForm'
+import { SubCourseCreationForm } from './SubCourseCreationForm'
 
 type RegistrationType = 'course' | 'subcourse' | 'video' | null
 
